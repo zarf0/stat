@@ -1,0 +1,194 @@
+/*base.html */
+body {
+    @apply bg-gray-50 text-gray-800 font-sans;
+}
+
+a {
+    @apply text-green-600 hover:text-green-800;
+}
+
+.brand-name {
+    font-family: 'Amiri', serif;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*blog.html*/
+.comments-section {
+    display: none;
+}
+
+.comments-section.hidden {
+    display: none;
+}
+
+.comments-section:not(.hidden) {
+    display: block;
+}
+#comments-sidebar .comment-list,
+#comments-slider .comment-list {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+.comment-form-container {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+}
+.comment-container:hover .comment-actions {
+    opacity: 1;
+    visibility: visible;
+}
+
+.glowing-border {
+    border: 2px solid #10b981;
+    /* Emerald border color */
+    box-shadow: 0 0 10px #10b981, 0 0 20px #10b981, 0 0 30px #10b981;
+    /* Glowing effect */
+    transition: all 0.3s ease;
+}
+
+.glowing-border:hover {
+    box-shadow: 0 0 15px #10b981, 0 0 25px #10b981, 0 0 35px #10b981;
+    /* Glowing effect on hover */
+}
+
+/*book_detals.html*/
+.dark #pdf-viewer {
+    background-color: #1a202c;
+}
+
+.dark .text-layer {
+    mix-blend-mode: difference;
+}
+
+.dark .text-layer div {
+    color: white !important;
+    opacity: 0.7 !important;
+}
+
+.dark .pdf-controls {
+    background-color: #2d3748;
+    border-color: #4a5568;
+}
+
+.dark .pdf-nav-btn,
+.dark .zoom-btn {
+    background-color: #4a5568;
+    color: #cbd5e0;
+}
+
+.dark .pdf-search-input {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    color: #cbd5e0;
+}
+.pdf-nav-btn,
+.zoom-btn {
+    @apply p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors;
+}
+
+.pdf-search-input {
+    @apply px-3 py-1.5 border rounded-lg w-48 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-400;
+}
+
+.pdf-search-btn {
+    @apply px-3 py-1.5 bg-emerald-100 dark:bg-emerald-700 rounded-lg hover:bg-emerald-200 dark:hover:bg-emerald-600;
+}
+
+.text-layer {
+    @apply absolute top-0 left-0 pointer-events-none opacity-50;
+}
+
+.text-layer div {
+    @apply absolute transform;
+    line-height: 1;
+}
+
+.thumbnail {
+    @apply transition-transform hover:scale-105 shadow hover:shadow-lg;
+}
+
+.dark .text-layer {
+    mix-blend-mode: difference;
+}
+
+/*create_post.html*/
+#editor:empty:before {
+    content: attr(data-placeholder);
+    color: #999;
+    cursor: text;
+}
+
+.toolbar-btn {
+    @apply px-2 py-1 bg-white border rounded hover:bg-gray-50;
+}
+
+.toolbar-select {
+    @apply px-2 py-1 bg-white border rounded;
+}
+
+.editor-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+}
+
+.editor-table {
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.editor-table td,
+.editor-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    min-width: 100px;
+}
+
+#emojiPicker div {
+    cursor: pointer;
+    padding: 2px;
+}
+
+#emojiPicker div:hover {
+    background-color: #f0f0f0;
+}
+
+/*index.html*/
+.shelf-container {
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.shelf-book {
+    scroll-snap-align: start;
+}
+
+.perspective-1000 {
+    perspective: 1000px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/*wishlist.html*/
+/* Optional transition for smoother layout change */
+#gridView,
+#listView {
+    transition: opacity 0.3s ease;
+}
