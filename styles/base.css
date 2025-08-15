@@ -1,3 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.heading-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-bg {
+    background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.collection-card {
+    transition: all 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-overlay {
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+
 .suggestion-divider {
     border-top: 1px solid #e5e7eb;
     margin: 4px 0;
@@ -477,4 +529,5 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #0056b3;
+
 }
