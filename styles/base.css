@@ -481,3 +481,25 @@ button[type="submit"]:hover {
 
 }
 
+<style>
+  .animate-marquee {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* Optional: smoother text appearance */
+  .animate-marquee span {
+    display: inline-block;
+    padding-right: 3rem;
+    will-change: transform;
+  }
+</style>
+
+
+
