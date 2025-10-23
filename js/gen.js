@@ -1,18 +1,4 @@
-<script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        charcoal: '#2C3E50',
-                        slate: '#4A6572',
-                        sand: '#E5DCC3',
-                        linen: '#F9F5EB',
-                        sage: '#A3B18A'
-                    }
-                }
-            }
-        }
-    </script>
+
 
 // loginAnimation.js
 
@@ -663,3 +649,4 @@ function displaySuggestions(suggestions) {
 
 
  
+
